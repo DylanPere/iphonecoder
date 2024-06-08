@@ -109,6 +109,16 @@ width: 40px;
     align-items: center;
     padding: 60px;
 }
+button {
+    width: 40px;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #fff;
+    background-color: #ff007a;
+    border: none;
+    border-radius: 50%;
+}
 .ofertas {
     display: flex;
     flex-direction: row;
@@ -148,15 +158,13 @@ width: 40px;
     margin-top: 50px;
     position: relative;
 }
-
-.itemimg {
-    position: relative;
-    
-}
 .img {
-    width: 210px;
-    height: 210px;
+    max-width: 210px;
     margin-top: 5px;
+}
+.iphone13 {
+    width: 210px;
+    height: 188px;
 }
 .macbookimg {
     position: relative;
@@ -200,41 +208,70 @@ width: 40px;
 
 
 
-
+/*segundo html*/
 
 .publicacion {
     background-color: #fff;
+    min-height: 60vh;
     display: flex;
-}
-.comprainfo {
     justify-content: space-around;
-    align-content: center;
-    height: 50vh;
+    
+}
+.compra {
     display: flex;
-    flex-direction: column;
-}
-.precio {
-
-}
-.comprar_carrito{
-
-    justify-content: center;
-    align-items: center;
-    text-align: center;  
-}
-.comprar {
-    padding: 10px;
-    background-color: #ff007a;
-    border-radius: 10px;
-}
-.aac {
-    padding: 10px;
-    background-color: #ff007a;
-    border-radius: 10px;
-}
-.ipad {
 }
 .compra img {
-    margin-left: 20%;
-    max-width: 70%;
+    max-width: 500px;
+    margin: auto;
+}
+.compra__nombre  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.compra__carrito {
+    display: flex;
+    margin: auto;
+
+}
+.compra__precio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.compra__precio p {
+    
+    font-size: 23px;
+    text-align: center;
+    
+}
+.compra__carrito a {
+    color: #eeeeee;
+    padding: 15px;
+    margin: 15px;
+    background-color: #ff007a;
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: jura, sans-serif;
+}
+
+.compra__info {
+    display: grid;
+    grid-template-columns: 6;
+    grid-template-columns: 2;
+    font-family: sans-serif;
+}
+
+
+
+@media (max-width: 1440px) {
+    .item {
+        height: 243,06px;
+        width: 210px;
+        overflow: hidden;
+    }
+    .img {
+        width: 180px;
+        height: 180px;
+    }
 }

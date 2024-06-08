@@ -5,44 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iPad 9va Gen 256 GB</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navBar">
-            <div>
-                <img src="../assets/iphonecoder.png" alt="">
-            </div>
-            <div class="Mas">
-                <select name="" id="">
-                    <option value=""></option>
-                    <option value="">favoritos</option>
-                    <option value="">mis compras</option>
-                    <option value="">ajustes</option>
-                    <option value="">envio y pago</option>
-                </select></div>
-        </nav>
+        <div class="logo">
+            <img src="../assets/iphonecoder.png" alt="">
+        </div>
+        <div class="opciones">
+            <select name="" id="">
+                <option value=""></option>
+                <option value="">favoritos</option>
+                <option value="">mis compras</option>
+                <option value="">ajustes</option>
+                <option value="">envio y pago</option>
+            </select></div>
     </header>
     <main>
         <section class="publicacion">
             <div class="compra">
-                <img src="../assets/applewatchserie9.jpg" alt="" class="ipadd">
+                <img src="../assets/applewatchserie9.jpg" alt="">
             </div>
-            <div class="precio">
-                <p><del>$510.000</del>  $470.000</p>
-                <button>COMPRAR</button>
-                <button>AGREGAR AL CARRITO</button>
+            <div class="compra__info">
+                <div class="compra__nombre">
+                    <h1>Apple Watch Serie 9 41mm</h1>
+                </div>
+                <div class="compra__precio">
+                    <p><del>$510.000</del>  $470.000</p>
+                </div>
+                <div class="compra__carrito">
+                    <a href="">COMPRAR</a>
+                    <a href="">AGREGAR AL CARRITO</a>
+                </div>
             </div>
         </section>
         
-        <p class="NuevosIngresosText">PRODUCTOS SIMILARES</p>
-        <section class="NuevosIngresos">
-            <div>
-                <img src="../assets/msbbook-pro-m2-800x522.jpg" alt="" class="ni">MacBook Pro M2
-                <img src="../assets/ipad-9va gen.jpg" alt="" class="ni">iPad 9va Gen 256GB
-                <img src="../assets/Airpods.jpg" alt="" class="ni">AirPods Pro usb C
-                <img src="../assets/macbook-air-m2.jpg" alt="" class="ni">MacBook Pro M2
-            </div>
-            <div><button>+</button></div>
+        <p class="sectionName">PRODUCTOS RELACIONADOS</p>
+        <section class="productosRelacionados">
+            <a href="" class="item">
+                <div class="itemimg">
+                    <img class="macbookimg" src="../assets/msbbook-pro-m2-800x522.jpg" alt="">
+                </div>
+                <div class="itemNombre">
+                    <p>MacBook Pro M2</p>
+                </div>                                
+            </a>
+            <a href="../pages/iPad_ofertas.html" class="item">
+                <div class="itemimg">
+                    <img class="img" src="../assets/ipad-9va gen.jpg" alt="">
+                </div>
+                <div class="itemNombre">
+                    <p>iPad 9va Gen 256 GB</p>
+                </div>
+            </a>
+            <a href="../pages/airpods_ofertas.html"class="item">
+                <div class="itemimg">
+                    <img class="img" src="../assets/Airpods.jpg" alt="">
+                </div>
+                <div class="itemNombre">
+                    <p>AirPods Pro USB C</p>
+                </div>               
+            </a>     
+            <a href="../pages/MacBook_ofertas.html" class="item">
+                <div class="itemimg">
+                    <img class="macbookimg" src="../assets/macbook-air-m2.jpg" alt="">
+                </div>
+                <div class="itemNombre">
+                    <p>MacBook Air M2</p>
+                </div>                                
+            </a>
+                <button>+</button>
         </section>
     </main>
     <footer>
