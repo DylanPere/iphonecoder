@@ -12,23 +12,32 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="assets/iphonecoder.png" alt="">
-        </div>
-        <div class="buscador">
-            <form>
-                <input class="busqueda" type="text" name="" placeholder="¿Qué estás buscando?">
-            </form>
-        </div>
-        <div class="opciones">
-            <select name="" id="">
-                <option value=""></option>
-                <option value="">favoritos</option>
-                <option value="">mis compras</option>
-                <option value="">ajustes</option>
-                <option value="">envio y pago</option>
-            </select>
-        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="./assets/iphonecoder.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex" role="search">
+                    <input class="busqueda" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Más Opciones
+                        </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <nav class="dispositivos">
