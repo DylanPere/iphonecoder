@@ -6,32 +6,24 @@
 body {
     background-color: #131313;
 }
-header{
-    display: flex;
-    width: 100%;
-    min-height: auto;
-    padding: 20px;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
+header {
     background-color: #131313;
-    z-index: 1;
+    position: fixed;
+    width: 100%;
+    min-height: 20vh;
+    top: 0;
+    z-index: 1
+}
+.navbar {
+    padding: 20px;
+    display: flex;
 }
 
-main {
-    margin-top: 25vh;
-    background-color: #131313;
-    width: 100%;
-    box-sizing: border-box;
-    
-}
 .logo {
     margin-left: 20px;
     margin-top: 20px;
 }
-.buscador {
-    margin-top: 40px;
-}
+
 .busqueda {
     height: 35px;
     width: 400px;
@@ -42,18 +34,19 @@ main {
     padding: 5px;
     border: none;
     color: #fff;
+
 }
+
 input::placeholder {
     color: #eeeeee;
     font-family: jura, sans-serif;
 }
-.opciones {
-    margin-right: 20px;
-    margin-top: 20px;
-}
-.opciones select {
-height: 40px;
-width: 40px;
+
+main {
+    margin-top: 20vh ;
+    background-color: #131313;
+    width: 100%;
+    box-sizing: border-box;
 }
 .dispositivos {
     background-color: #383838;
@@ -172,6 +165,9 @@ button {
     width: 210px;
     height: 127px;
 }
+.ipad {
+    max-height: 180px
+}
 .itemNombre {
     color: #131313;
     background-color: #eeeeee;
@@ -266,12 +262,61 @@ button {
 
 @media (max-width: 1440px) {
     .item {
-        height: 243,06px;
-        width: 210px;
-        overflow: hidden;
+        width: 170px;
+        min-height: 170px;
+        max-height: 200px;
+    }
+    .itemNombre {
+        width: 170px;
     }
     .img {
-        width: 180px;
-        height: 180px;
+        height: 140px;
+        width: 140px;
+    }
+    .macbookimg {
+        height: 75px;
+        width: 120px;
+    } .iphone13 {
+        height: 120px;
+        width: 140px;
     }
 }
+
+@media (max-width: 720px) {
+    .ofertas , .nuevosIngresos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .item {
+        
+    }
+    button {
+        display: none;
+    }
+    .novText p {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .novImg img{
+        max-height: 150px;
+    }
+    .dispositivos a{
+        font-size: 20px;
+    }
+    .novText {
+        display: none;
+    }
+    .lorem p{
+        font-size: smaller;
+    }
+    .novedades {
+        height: 20vh;
+    }
+}
+
+@media (max-width: )
