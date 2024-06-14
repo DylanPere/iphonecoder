@@ -298,6 +298,14 @@ button {
     .novText p {
         display: none;
     }
+    .publicacion {
+        display: grid;
+    }
+    .productosRelacionados {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 
 }
 
@@ -319,4 +327,4 @@ button {
     }
 }
 
-@media (max-width: )
+@media (max-width: 425px) 
