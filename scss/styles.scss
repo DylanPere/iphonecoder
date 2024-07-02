@@ -1,0 +1,17 @@
+@import "./utilities/variables";
+@import "./base/reset";
+
+
+
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+
+
+
+@import "./components/navbar";
+@import "./components/card";
+@import "./components/carousel";
+@import "./components/buttons";
+
+@import "./layout/media/media"

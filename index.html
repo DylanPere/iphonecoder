@@ -12,42 +12,36 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="logo" src="./assets/iphonecoder.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#"><img src="./assets/iphonecoder.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="buscador collapse navbar-collapse justify-content-center" id="navbarNav">
                     <form class="d-flex" role="search">
-                        <input class="busqueda form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                        <button class="search btn btn-outline-success" type="submit">Buscar</button>
                     </form>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Más Opciones
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Favoritos</a></li>
-                                <li><a class="dropdown-item" href="#">Envio y Pago</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Ajustes</a></li>
-                            </ul>
-                        </li>
+                </div>
+                <div class="mas-opciones collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class=""><a class="" href="#">Favoritos</a></li>
+                        <li class=""><a class="" href="#">Envio y Pago</a></li>
+                        <li class=""><a class="" href="#">Ajustes</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <nav class="dispositivos">
+        <div class="dispositivos">
             <a href="" class="dispositivo">iPhone</a>
         <a href=""class="dispositivo">Mac</a>
         <a href=""class="dispositivo">Watch</a>
         <a href=""class="dispositivo">AirPods</a>
         <a href=""class="dispositivo">iPad</a>
-        </nav>
+        </div>
         <section class="novedades">
             <div class="novText">
                 <p>Apple Watch SERIES 6</p>            
@@ -60,81 +54,87 @@
         <p class="sectionName">OFERTAS</p>
         <section class="ofertas">
             <a href="./pages/iPad_ofertas.html" class="item">
-                <div class="itemimg">
+                <div class="item-img">
                     <img class="img ipad" src="./assets/ipad-9va gen.jpg" alt="">
                 </div>
-                <div class="itemNombre">
-                    <p>iPad 9va Gen 256 GB</p>
+                <div class="item-info">
+                    <h2>iPad 9va Gen 256 GB</h2>
+                    <p><del>$600.000</del> $560.000</p>
                 </div>
             </a>
             <a href="./pages/airpods_ofertas.html"class="item">
-                <div class="itemimg">
+                <div class="item-img">
                     <img class="img" src="./assets/Airpods.jpg" alt="">
                 </div>
-                <div class="itemNombre">
-                    <p>AirPods Pro USB C</p>
+                <div class="item-info">
+                    <h2>AirPods Pro USB C</h2>
+                    <p><del>$320.000</del> $270.000</p>
                 </div>               
             </a>
             <a href="./pages/macbook_ofertas.html"class="item">
-                <div class="itemimg">
+                <div class="item-img">
                     <img class="macbookimg" src="./assets/macbook-air-m2.jpg" alt="">
                 </div>
-                <div class="itemNombre">
-                    <p>MacBook Air M2 256 GB</p>
+                <div class="item-info">
+                    <h2>MacBook Air M2 256 GB</h2>
+                    <p><del>$1.310.000</del> $1.250.000</p>
                 </div>                               
             </a>
             <a href="./pages/watch_ofertas.html"class="item">
-                <div class="itemimg">
+                <div class="item-img">
                     <img class="img" src="./assets/applewatchserie9.jpg" alt="">
                 </div>
-                <div class="itemNombre">
-                    <p>Apple Watch SERIE 9</p>
+                <div class="item-info">
+                    <h2>Apple Watch SERIE 9</h2>
+                    <p><del>$510.000</del> $470.000</p>
                 </div>                                
             </a>
-            <button>+</button>
         </section>
         <p class="sectionName">NUEVOS INGRESOS</p>
         <section class="nuevosIngresos">
             <a href="" class="item">
-                <div class="itemimg">
+                <div class="item-img">
                     <img class="iphone13" src="./assets/13-pro1t.jpg" alt="">
                 </div>
-                <div class="itemNombre">
-                    <p>iPhone 13 Pro 1T</p>
+                <div class="item-info">
+                    <h2>iPhone 13 Pro 1T</h2>
+                    <p>$1.100.000</p>
                 </div>                              
             </a>
             <a href="" class="item">
-                <div class="itemimg">
+                <div class="item-img">
                     <img class="img" src="./assets/watch-series-7.jpg" alt="">
                 </div>
-                <div class="itemNombre">
-                    <p>Apple Watch SERIE 7</p>
+                <div class="item-info">
+                    <h2>Apple Watch SERIE 7</h2>
+                    <p>$250.000</p>
                 </div>                
             </a>
             <a href="" class="item">
-                <div class="itemimg">
+                <div class="item-img">
                     <img class="macbookimg" src="./assets/msbbook-pro-m2-800x522.jpg" alt="">
                 </div>
-                <div class="itemNombre">
-                    <p>MacBook Pro M2</p>
+                <div class="item-info">
+                    <h2>MacBook Pro M2</h2>
+                    <p>$1.700.000</p>
                 </div>                                
             </a>
             <a href="" class="item">
-                <div class="itemimg">
+                <div class="item-img">
                     <img class="img" src="./assets/homepod-hero-select-201801-800x800.jpg" alt="">
                 </div>
-                <div class="itemNombre">
-                    <p>Homepod</p>
+                <div class="item-info">
+                    <h2>Homepod</h2>
+                    <p>$150.000</p>
                 </div>               
             </a>
-                <button>+</button>
         </section>
     </main>    
     <footer>
         <div class="footer">
-            <a href="" class="textoFooter">QUIENES SOMOS</a>
-            <a href=""class="textoFooter">SOPORTE</a>
-            <a href="./index.html"class="textoFooter">VOLVER</a>
+            <a href="">QUIENES SOMOS</a>
+            <a href="">SOPORTE</a>
+            <a href="./index.html">VOLVER</a>
         </div>
         <div class="lorem"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a eum laudantium cumque praesentium voluptas sint atque ut, hic voluptate molestiae rerum iusto, perferendis assumenda beatae eligendi sapiente labore dolor!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae, eum corporis consectetur inventore cupiditate maxime, ipsum itaque incidunt suscipit voluptates fugit quasi laborum magnam, dolor voluptatem quae nostrum qui?</p></div>
     </footer>

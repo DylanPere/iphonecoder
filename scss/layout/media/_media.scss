@@ -1,0 +1,130 @@
+@media (max-width: $breakpoint-1) {
+  main {
+      .ofertas, .nuevosIngresos, .productosRelacionados {
+        .item { 
+          margin: 10px;
+          min-width: 200px;
+          height: 200px;
+
+          .item-img {
+            img {width: 140px;
+              height: auto;
+              margin-top: 40px;
+
+            }
+            .macbookimg {width: 140px;
+              margin-top: 70px;
+            }
+            .ipad {width: 140px;
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+
+    }
+
+}
+@media (max-width: $breakpoint-2) {
+    main {
+        .ofertas, .nuevosIngresos, .productosRelacionados {
+          .item { 
+            margin: 10px;
+            min-width: 300px;
+            height: 200px;
+
+            .item-img {
+              img {width: 140px;
+                height: auto;
+
+              }
+              .macbookimg {width: 140px;
+              }
+              .ipad {width: 140px;
+              }
+            }
+
+          }
+        }
+
+      }
+
+  }
+  
+  @media (max-width: $breakpoint-3) {
+    main {
+      .publicacion {
+        display: grid;
+        .compra {
+          img {
+            width: 300px;
+          }
+          }
+        }
+      }
+    }
+
+  
+  @media (max-width: $breakpoint-4){
+    main {
+      .publicacion {
+        display: grid;
+        .compra {
+          img {
+            width: 250px;
+          }}
+          .compra__info {
+            font-size: smaller;
+            .compra__nombre {
+              font-size: smaller;
+            }
+            .compra__precio {
+              font-size: smaller;
+
+            }
+          }
+          
+        }
+      .ofertas, .nuevosIngresos, .productosRelacionados {
+        .item { 
+          margin: 10px;
+          min-width: 170px;
+          min-height: 20px;
+          max-width: 140px;
+
+          .item-img {
+            img {width: 100px;
+              height: auto;
+              margin-top: 10px;
+
+            }
+            .macbookimg {width: 100px;margin-top: 10px;
+            }
+            .ipad {width: 80px;margin-top: 10px;
+            }
+          }
+          .item-info {
+            h2 {
+              font-size: 15px;
+            }
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+
+    
+      .dispositivos {
+        .dispositivo {
+          font-size: smaller;
+        }
+      }
+      .novedades{
+        .novText {
+          display: none;
+        }
+      }
+    }
+    
+  }

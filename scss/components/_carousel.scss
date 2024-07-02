@@ -1,0 +1,55 @@
+.novedades {
+    height: 50vh;
+    background-color: #383838;
+    border-radius: 30px;
+    margin-right: 7px;
+    margin-left:7px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    padding: 65px;
+    .novText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    a{
+        text-decoration: none;
+        background-color: #ff007a;
+        padding: 10px 20px;
+        color: #eeeeee;
+        border-radius: 10px;
+        font-family: jura, sans-serif;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        &:hover {
+            transform: scale(1.2);
+            transition: 0.1s;
+        }
+    }
+    p{
+        color: #eeeeee;
+        font-family: jura, sans-serif;
+        letter-spacing: 9px;
+        font-size: 30px;
+        margin: 30px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.novImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    img {
+        width: 230px;
+        height: auto;
+    }
+    
+}
+}

@@ -1,0 +1,49 @@
+.item {
+    min-width: 250px;
+    min-height: 310px;
+    border:1px solid #777;
+    border-radius: 10px;
+    background-color: #fff;
+    font-family: $primary-font;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 
+        box-shadow 0.3s ease-in-out,
+        transform 0.3s;
+    .item-img {
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 210px;
+            margin-top: 10px;}
+        .iphone13 {
+            width: 210px;
+            height: 188px;}
+        .macbookimg {
+            margin-top: 40px;
+            width: 210px;
+            height: 127px;}
+        .ipad {
+            max-height: 180px}
+            }
+    .item-info {
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+        h2 {
+        font-size: 17px;
+        margin: 20px;
+        color: #222;
+        font-weight: 600;
+        margin: 10px;}
+        p {font-size: 20px;
+            color: #222;}
+    }
+    &:hover {
+        transform: scale(1.2);
+        box-shadow: 1px 1px 10px #777;
+    }
+}
