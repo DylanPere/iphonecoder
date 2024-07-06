@@ -110,7 +110,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-right: 10px; }
+    margin: 10px; }
     .navbar div .buscador form input {
       height: 35px;
       width: 400px;
@@ -137,16 +137,21 @@ body {
       color: #fff; }
       .navbar div .buscador button span {
         background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%288%2C 8%2C 8%2C 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
-  .navbar div .mas-opciones li a {
-    font-family: sans-serif;
-    text-decoration: none;
-    color: #eee; }
+  .navbar div .mas-opciones {
+    justify-self: flex-end; }
+    .navbar div .mas-opciones li a {
+      font-family: sans-serif;
+      text-decoration: none;
+      color: #eee; }
 
 @media (max-width: 992px) {
   .navbar .buscador {
     justify-content: flex-start; }
     .navbar .buscador form input {
-      width: 100%; } }
+      min-width: 200px;
+      max-width: 200px; }
+      .navbar .buscador form input::placeholder {
+        font-size: 15px; } }
 
 .footer {
   background-color: #000000;
@@ -314,8 +319,15 @@ main {
       font-size: 15px; }
   main .dispositivos .dispositivo {
     font-size: smaller; }
-  main .novedades .novText {
-    display: none; } }
+  main .novedades {
+    flex-direction: column;
+    text-align: center; }
+    main .novedades .novImg {
+      order: 1; }
+    main .novedades .novText {
+      order: 2; }
+      main .novedades .novText p {
+        font-size: 25px; } }
 
 @media (max-width: 570px) {
   main .ofertas .item, main .productosRelacionados .item, main .nuevosIngresos .item {

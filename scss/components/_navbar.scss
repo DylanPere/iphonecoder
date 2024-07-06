@@ -12,7 +12,7 @@
             display: flex;
             justify-content: center;
             text-align: center;
-            margin-right: 10px;
+            margin: 10px;
             form {
                 input {
                     height: 35px;
@@ -48,6 +48,7 @@
             }
         }
         .mas-opciones {
+            justify-self: flex-end;
             li {
                 a {
                     font-family: $primary-font;
@@ -65,7 +66,11 @@
             justify-content: flex-start;
             form {
                 input {
-                    width: 100%;
+                    min-width: 200px;
+                    max-width: 200px;
+                    &::placeholder {
+                        font-size: 15px;
+                    }
                 }
             }
         }
