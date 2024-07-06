@@ -1,16 +1,21 @@
-.navbar{
+.navbar {
     padding: 20px;
     display: flex;
     div {
-        a{  margin-right: 20px;
-            img{margin: 20px;}}
-            .buscador {
-                display: flex;
+        a {
+            margin-right: 20px;
+            img {
+                margin: 20px;
+            }
+        }
+        .buscador {
+            display: flex;
             justify-content: center;
             text-align: center;
-                margin-right: 10px;
+            margin-right: 10px;
             form {
-                input {height: 35px;
+                input {
+                    height: 35px;
                     width: 400px;
                     font-size: 25px;
                     background-color: #383838;
@@ -21,8 +26,10 @@
                     &::placeholder {
                         color: #eeeeee;
                         font-family: $secondary-font, $primary-font;
-                    }}
-                button {margin-left: 10px;
+                    }
+                }
+                button {
+                    margin-left: 10px;
                     font-family: $primary-font;
                     font-size: 10px;
                     background-color: #ff007a;
@@ -30,8 +37,10 @@
                     padding: 7px;
                     border-radius: 10px;
                     border: none;
-                }}
-            button {border: none;
+                }
+            }
+            button {
+                border: none;
                 color: #fff;
                 span {
                     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%288%2C 8%2C 8%2C 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -40,13 +49,25 @@
         }
         .mas-opciones {
             li {
-                a  {
+                a {
                     font-family: $primary-font;
                     text-decoration: none;
-                    color: #eee;}
+                    color: #eee;
+                }
             }
         }
     }
 }
-        
 
+@media (max-width: 992px) {
+    .navbar {
+        .buscador {
+            justify-content: flex-start;
+            form {
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

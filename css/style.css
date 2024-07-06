@@ -142,6 +142,12 @@ body {
     text-decoration: none;
     color: #eee; }
 
+@media (max-width: 992px) {
+  .navbar .buscador {
+    justify-content: flex-start; }
+    .navbar .buscador form input {
+      width: 100%; } }
+
 .footer {
   background-color: #000000;
   height: 40px;
