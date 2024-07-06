@@ -142,14 +142,14 @@ body {
     text-decoration: none;
     color: #eee; }
 
-@media (max-width: 992px) {
+@media (max-width: 510px) {
   .navbar .buscador {
     justify-content: flex-start; }
     .navbar .buscador form input {
-      min-width: 200px;
-      max-width: 200px; }
+      min-width: 190px;
+      max-width: 190px; }
       .navbar .buscador form input::placeholder {
-        font-size: 15px; } }
+        font-size: 14px; } }
 
 .footer {
   background-color: #000000;
@@ -321,10 +321,14 @@ main {
     flex-direction: column;
     text-align: center; }
     main .novedades .novImg {
+      margin: 0;
+      padding: 0;
       order: 1; }
       main .novedades .novImg img {
-        width: 100px; }
+        width: 200px; }
     main .novedades .novText {
+      padding: 0;
+      margin: 0;
       order: 2; }
       main .novedades .novText p {
         font-size: 15px; } }
