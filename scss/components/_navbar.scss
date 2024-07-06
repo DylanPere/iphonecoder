@@ -5,6 +5,10 @@
         a{  margin-right: 20px;
             img{margin: 20px;}}
             .buscador {
+                display: flex;
+            justify-content: center;
+            text-align: center;
+                margin-right: 10px;
             form {
                 input {height: 35px;
                     width: 400px;

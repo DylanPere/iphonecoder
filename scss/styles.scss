@@ -1,17 +1,20 @@
-@import "./utilities/variables";
-@import "./base/reset";
 
+@import 'utilities/variables';
+@import 'utilities/mixin';
+@import 'utilities/funciones';
+@import 'utilities/mapas';
 
+@import 'base/reset';
+@import 'base/tipografias';
 
-@import "./layout/header";
-@import "./layout/main";
-@import "./layout/footer";
+@import 'components/bootstrap';
+@import 'components/buttons';
+@import 'components/card';
+@import 'components/carousel';
+@import 'components/navbar';
 
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/main';
 
-
-@import "./components/navbar";
-@import "./components/card";
-@import "./components/carousel";
-@import "./components/buttons";
-
-@import "./layout/media/media"
+@import 'layout/media/media';
