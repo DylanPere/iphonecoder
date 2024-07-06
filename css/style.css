@@ -137,12 +137,10 @@ body {
       color: #fff; }
       .navbar div .buscador button span {
         background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%288%2C 8%2C 8%2C 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
-  .navbar div .mas-opciones {
-    justify-self: flex-end; }
-    .navbar div .mas-opciones li a {
-      font-family: sans-serif;
-      text-decoration: none;
-      color: #eee; }
+  .navbar div .mas-opciones li a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #eee; }
 
 @media (max-width: 992px) {
   .navbar .buscador {
@@ -324,10 +322,12 @@ main {
     text-align: center; }
     main .novedades .novImg {
       order: 1; }
+      main .novedades .novImg img {
+        width: 100px; }
     main .novedades .novText {
       order: 2; }
       main .novedades .novText p {
-        font-size: 25px; } }
+        font-size: 15px; } }
 
 @media (max-width: 570px) {
   main .ofertas .item, main .productosRelacionados .item, main .nuevosIngresos .item {

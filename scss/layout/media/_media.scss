@@ -124,12 +124,15 @@
         flex-direction: column;
         text-align: center;
         .novImg {
+          img {
+            width: 100px;
+          }
           order: 1;
         }
         .novText {
           order: 2;
           p {
-          font-size: 25px;
+          font-size: 15px;
         }
       }
     }
