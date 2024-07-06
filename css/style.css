@@ -341,4 +341,6 @@ main {
 @media (max-width: 400px) {
   main .ofertas .item, main .productosRelacionados .item, main .nuevosIngresos .item {
     min-width: 130px;
-    max-width: 130px; } }
+    max-width: 130px; }
+    main .ofertas .item .item-info h2, main .ofertas .item .item-info p, main .productosRelacionados .item .item-info h2, main .productosRelacionados .item .item-info p, main .nuevosIngresos .item .item-info h2, main .nuevosIngresos .item .item-info p {
+      font-size: smaller; } }
