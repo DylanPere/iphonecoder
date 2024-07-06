@@ -129,20 +129,6 @@
     
   }
   @media (max-width: $breakpoint-5) {
-    header {
-      .navbar {
-        div {
-          .buscador {
-            input {
-              width: 250px;
-              &::placeholder {
-                font-size: 20px;
-              }
-            }
-          }
-        }
-      }
-    }
     main {
       .ofertas, .productosRelacionados, .nuevosIngresos {
         .item {

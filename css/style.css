@@ -318,10 +318,6 @@ main {
     display: none; } }
 
 @media (max-width: 570px) {
-  header .navbar div .buscador input {
-    width: 250px; }
-    header .navbar div .buscador input::placeholder {
-      font-size: 20px; }
   main .ofertas .item, main .productosRelacionados .item, main .nuevosIngresos .item {
     max-width: 180px;
     min-width: 180px; } }
