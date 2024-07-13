@@ -1,5 +1,6 @@
 @media (max-width: $breakpoint-1) {
   main {
+    .ofertas-conteiner, .NuevosIngresos-conteiner, .productosRelacionados-conteiner {
       .ofertas, .nuevosIngresos, .productosRelacionados {
         .item { 
           margin: 10px;
@@ -21,12 +22,15 @@
           }
         }
       }
+    }
+      
 
     }
 
 }
 @media (max-width: $breakpoint-2) {
     main {
+      .ofertas-conteiner, .NuevosIngresos-conteiner, .productosRelacionados-conteiner{
         .ofertas, .nuevosIngresos, .productosRelacionados {
           .item { 
             margin: 10px;
@@ -47,7 +51,7 @@
           }
         }
 
-      }
+      }}
 
   }
   
@@ -85,6 +89,7 @@
           }
           
         }
+        .ofertas-conteiner, .NuevosIngresos-conteiner, .productosRelacionados-conteiner {
       .ofertas, .nuevosIngresos, .productosRelacionados {
         .item { 
           margin: 10px;
@@ -112,7 +117,7 @@
             }
           }
         }
-      }
+      }}
 
     
       .dispositivos {
@@ -144,29 +149,49 @@
   }
   }
   @media (max-width: $breakpoint-5) {
-
+    header {
+      .navbar {
+        .buscador {
+            justify-content: flex-start;
+            form {
+                input {
+                    min-width: 190px;
+                    max-width: 190px;
+                    font-size: 14px;
+                    &::placeholder {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    }
     main {
+      .ofertas-conteiner, .NuevosIngresos-conteiner, .productosRelacionados-conteiner {
       .ofertas, .productosRelacionados, .nuevosIngresos {
         .item {
           max-width: 180px;
           min-width: 180px;
 
         }
+          
       }
-    }
-  }
+      }
+    }}
+  
 @media (max-width: $breakpoint-6) {
   main {
-    .ofertas, .productosRelacionados, .nuevosIngresos {
-      .item {
-        min-width: 130px;
-        max-width: 130px;
-        .item-info {
-          h2, p {
-            font-size: smaller;
-          }
-        }
+    .ofertas-conteiner, .NuevosIngresos-conteiner, .productosRelacionados-conteiner {
+        .ofertas, .productosRelacionados, .nuevosIngresos {
+          .item {
+            min-width: 130px;
+            max-width: 130px;
+            .item-info {
+              h2, p {
+                font-size: smaller;
+              }
+            }
       }
     }
-  }
+  }}
 }

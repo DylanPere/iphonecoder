@@ -9,7 +9,7 @@ body {
 
 .item {
   min-width: 250px;
-  min-height: 310px;
+  min-height: 350px;
   border: 1px solid #777;
   border-radius: 10px;
   background-color: #fff;
@@ -39,7 +39,7 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center; }
-    .item .item-info h2 {
+    .item .item-info h3 {
       font-size: 17px;
       margin: 20px;
       color: #222;
@@ -102,54 +102,49 @@ body {
 .navbar {
   padding: 20px;
   display: flex; }
-  .navbar div a {
-    margin-right: 20px; }
-    .navbar div a img {
-      margin: 20px; }
-  .navbar div .buscador {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 10px; }
-    .navbar div .buscador form input {
-      height: 35px;
-      width: 400px;
-      font-size: 25px;
-      background-color: #383838;
-      border-radius: 50px;
-      padding: 5px;
-      border: none;
-      color: #fff; }
-      .navbar div .buscador form input::placeholder {
-        color: #eeeeee;
-        font-family: Jura, sans-serif; }
-    .navbar div .buscador form button {
-      margin-left: 10px;
-      font-family: sans-serif;
-      font-size: 10px;
-      background-color: #ff007a;
-      color: #fff;
-      padding: 7px;
-      border-radius: 10px;
-      border: none; }
-    .navbar div .buscador button {
-      border: none;
-      color: #fff; }
-      .navbar div .buscador button span {
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%288%2C 8%2C 8%2C 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
-  .navbar div .mas-opciones li a {
-    font-family: sans-serif;
-    text-decoration: none;
-    color: #eee; }
-
-@media (max-width: 510px) {
-  .navbar .buscador {
-    justify-content: flex-start; }
-    .navbar .buscador form input {
-      min-width: 190px;
-      max-width: 190px; }
-      .navbar .buscador form input::placeholder {
-        font-size: 14px; } }
+  .navbar div {
+    flex-grow: 1; }
+    .navbar div a {
+      margin-right: 20px; }
+      .navbar div a img {
+        margin: 20px; }
+    .navbar div .buscador {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 10px; }
+      .navbar div .buscador form input {
+        height: 35px;
+        width: 400px;
+        font-size: 25px;
+        background-color: #383838;
+        border-radius: 50px;
+        padding: 5px;
+        border: none;
+        color: #fff; }
+        .navbar div .buscador form input::placeholder {
+          color: #eeeeee;
+          font-family: Jura, sans-serif; }
+      .navbar div .buscador form button {
+        margin-left: 10px;
+        font-family: sans-serif;
+        font-size: 10px;
+        background-color: #ff007a;
+        color: #fff;
+        padding: 7px;
+        border-radius: 10px;
+        border: none; }
+      .navbar div .buscador button {
+        border: none;
+        color: #fff; }
+        .navbar div .buscador button span {
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%288%2C 8%2C 8%2C 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+    .navbar div .mas-opciones {
+      flex-grow: 0; }
+      .navbar div .mas-opciones li a {
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #eee; }
 
 .footer {
   background-color: #000000;
@@ -184,12 +179,35 @@ main {
   background-color: #131313;
   width: 100%;
   box-sizing: border-box; }
-  main .sectionName {
-    color: #fff;
-    margin-top: 50px;
-    margin-left: 60px;
-    font-size: 25px;
-    font-family: jura, sans-serif; }
+  main .ofertas-conteiner .sectiontext, main .NuevosIngresos-conteiner .sectiontext, main .productosRelacionados-conteiner .sectiontext {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 40px;
+    margin-bottom: 6vh; }
+    main .ofertas-conteiner .sectiontext .sectionName, main .NuevosIngresos-conteiner .sectiontext .sectionName, main .productosRelacionados-conteiner .sectiontext .sectionName {
+      color: #fff;
+      margin-top: 50px;
+      margin-left: 60px;
+      font-size: 25px;
+      font-family: jura, sans-serif; }
+    main .ofertas-conteiner .sectiontext button, main .NuevosIngresos-conteiner .sectiontext button, main .productosRelacionados-conteiner .sectiontext button {
+      padding: 7px;
+      min-width: 5vh;
+      min-height: 3vh;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      background-color: #ff007a; }
+      main .ofertas-conteiner .sectiontext button:hover, main .NuevosIngresos-conteiner .sectiontext button:hover, main .productosRelacionados-conteiner .sectiontext button:hover {
+        transform: scale(1.1);
+        transition: 0.2s; }
+  main .ofertas-conteiner .ofertas, main .ofertas-conteiner .nuevosIngresos, main .ofertas-conteiner .productosRelacionados, main .NuevosIngresos-conteiner .ofertas, main .NuevosIngresos-conteiner .nuevosIngresos, main .NuevosIngresos-conteiner .productosRelacionados, main .productosRelacionados-conteiner .ofertas, main .productosRelacionados-conteiner .nuevosIngresos, main .productosRelacionados-conteiner .productosRelacionados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; }
   main .dispositivos {
     background-color: #383838;
     display: flex;
@@ -202,16 +220,6 @@ main {
       color: #eeeeee; }
       main .dispositivos .dispositivo:hover {
         text-decoration: underline; }
-  main .sectionName {
-    text-align: center;
-    font-size: 2rem;
-    margin: 20px 0; }
-  main .ofertas, main .nuevosIngresos, main .productosRelacionados {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap; }
   main .publicacion {
     background-color: #fff;
     min-height: 60vh;
@@ -251,32 +259,32 @@ main {
           text-align: center; }
 
 @media (max-width: 1024px) {
-  main .ofertas .item, main .nuevosIngresos .item, main .productosRelacionados .item {
+  main .ofertas-conteiner .ofertas .item, main .ofertas-conteiner .nuevosIngresos .item, main .ofertas-conteiner .productosRelacionados .item, main .NuevosIngresos-conteiner .ofertas .item, main .NuevosIngresos-conteiner .nuevosIngresos .item, main .NuevosIngresos-conteiner .productosRelacionados .item, main .productosRelacionados-conteiner .ofertas .item, main .productosRelacionados-conteiner .nuevosIngresos .item, main .productosRelacionados-conteiner .productosRelacionados .item {
     margin: 10px;
     min-width: 200px;
     height: 200px; }
-    main .ofertas .item .item-img img, main .nuevosIngresos .item .item-img img, main .productosRelacionados .item .item-img img {
+    main .ofertas-conteiner .ofertas .item .item-img img, main .ofertas-conteiner .nuevosIngresos .item .item-img img, main .ofertas-conteiner .productosRelacionados .item .item-img img, main .NuevosIngresos-conteiner .ofertas .item .item-img img, main .NuevosIngresos-conteiner .nuevosIngresos .item .item-img img, main .NuevosIngresos-conteiner .productosRelacionados .item .item-img img, main .productosRelacionados-conteiner .ofertas .item .item-img img, main .productosRelacionados-conteiner .nuevosIngresos .item .item-img img, main .productosRelacionados-conteiner .productosRelacionados .item .item-img img {
       width: 140px;
       height: auto;
       margin-top: 40px; }
-    main .ofertas .item .item-img .macbookimg, main .nuevosIngresos .item .item-img .macbookimg, main .productosRelacionados .item .item-img .macbookimg {
+    main .ofertas-conteiner .ofertas .item .item-img .macbookimg, main .ofertas-conteiner .nuevosIngresos .item .item-img .macbookimg, main .ofertas-conteiner .productosRelacionados .item .item-img .macbookimg, main .NuevosIngresos-conteiner .ofertas .item .item-img .macbookimg, main .NuevosIngresos-conteiner .nuevosIngresos .item .item-img .macbookimg, main .NuevosIngresos-conteiner .productosRelacionados .item .item-img .macbookimg, main .productosRelacionados-conteiner .ofertas .item .item-img .macbookimg, main .productosRelacionados-conteiner .nuevosIngresos .item .item-img .macbookimg, main .productosRelacionados-conteiner .productosRelacionados .item .item-img .macbookimg {
       width: 140px;
       margin-top: 70px; }
-    main .ofertas .item .item-img .ipad, main .nuevosIngresos .item .item-img .ipad, main .productosRelacionados .item .item-img .ipad {
+    main .ofertas-conteiner .ofertas .item .item-img .ipad, main .ofertas-conteiner .nuevosIngresos .item .item-img .ipad, main .ofertas-conteiner .productosRelacionados .item .item-img .ipad, main .NuevosIngresos-conteiner .ofertas .item .item-img .ipad, main .NuevosIngresos-conteiner .nuevosIngresos .item .item-img .ipad, main .NuevosIngresos-conteiner .productosRelacionados .item .item-img .ipad, main .productosRelacionados-conteiner .ofertas .item .item-img .ipad, main .productosRelacionados-conteiner .nuevosIngresos .item .item-img .ipad, main .productosRelacionados-conteiner .productosRelacionados .item .item-img .ipad {
       width: 140px;
       margin-top: 40px; } }
 
 @media (max-width: 928px) {
-  main .ofertas .item, main .nuevosIngresos .item, main .productosRelacionados .item {
+  main .ofertas-conteiner .ofertas .item, main .ofertas-conteiner .nuevosIngresos .item, main .ofertas-conteiner .productosRelacionados .item, main .NuevosIngresos-conteiner .ofertas .item, main .NuevosIngresos-conteiner .nuevosIngresos .item, main .NuevosIngresos-conteiner .productosRelacionados .item, main .productosRelacionados-conteiner .ofertas .item, main .productosRelacionados-conteiner .nuevosIngresos .item, main .productosRelacionados-conteiner .productosRelacionados .item {
     margin: 10px;
     min-width: 300px;
     height: 200px; }
-    main .ofertas .item .item-img img, main .nuevosIngresos .item .item-img img, main .productosRelacionados .item .item-img img {
+    main .ofertas-conteiner .ofertas .item .item-img img, main .ofertas-conteiner .nuevosIngresos .item .item-img img, main .ofertas-conteiner .productosRelacionados .item .item-img img, main .NuevosIngresos-conteiner .ofertas .item .item-img img, main .NuevosIngresos-conteiner .nuevosIngresos .item .item-img img, main .NuevosIngresos-conteiner .productosRelacionados .item .item-img img, main .productosRelacionados-conteiner .ofertas .item .item-img img, main .productosRelacionados-conteiner .nuevosIngresos .item .item-img img, main .productosRelacionados-conteiner .productosRelacionados .item .item-img img {
       width: 140px;
       height: auto; }
-    main .ofertas .item .item-img .macbookimg, main .nuevosIngresos .item .item-img .macbookimg, main .productosRelacionados .item .item-img .macbookimg {
+    main .ofertas-conteiner .ofertas .item .item-img .macbookimg, main .ofertas-conteiner .nuevosIngresos .item .item-img .macbookimg, main .ofertas-conteiner .productosRelacionados .item .item-img .macbookimg, main .NuevosIngresos-conteiner .ofertas .item .item-img .macbookimg, main .NuevosIngresos-conteiner .nuevosIngresos .item .item-img .macbookimg, main .NuevosIngresos-conteiner .productosRelacionados .item .item-img .macbookimg, main .productosRelacionados-conteiner .ofertas .item .item-img .macbookimg, main .productosRelacionados-conteiner .nuevosIngresos .item .item-img .macbookimg, main .productosRelacionados-conteiner .productosRelacionados .item .item-img .macbookimg {
       width: 140px; }
-    main .ofertas .item .item-img .ipad, main .nuevosIngresos .item .item-img .ipad, main .productosRelacionados .item .item-img .ipad {
+    main .ofertas-conteiner .ofertas .item .item-img .ipad, main .ofertas-conteiner .nuevosIngresos .item .item-img .ipad, main .ofertas-conteiner .productosRelacionados .item .item-img .ipad, main .NuevosIngresos-conteiner .ofertas .item .item-img .ipad, main .NuevosIngresos-conteiner .nuevosIngresos .item .item-img .ipad, main .NuevosIngresos-conteiner .productosRelacionados .item .item-img .ipad, main .productosRelacionados-conteiner .ofertas .item .item-img .ipad, main .productosRelacionados-conteiner .nuevosIngresos .item .item-img .ipad, main .productosRelacionados-conteiner .productosRelacionados .item .item-img .ipad {
       width: 140px; } }
 
 @media (max-width: 768px) {
@@ -296,24 +304,24 @@ main {
         font-size: smaller; }
       main .publicacion .compra__info .compra__precio {
         font-size: smaller; }
-  main .ofertas .item, main .nuevosIngresos .item, main .productosRelacionados .item {
+  main .ofertas-conteiner .ofertas .item, main .ofertas-conteiner .nuevosIngresos .item, main .ofertas-conteiner .productosRelacionados .item, main .NuevosIngresos-conteiner .ofertas .item, main .NuevosIngresos-conteiner .nuevosIngresos .item, main .NuevosIngresos-conteiner .productosRelacionados .item, main .productosRelacionados-conteiner .ofertas .item, main .productosRelacionados-conteiner .nuevosIngresos .item, main .productosRelacionados-conteiner .productosRelacionados .item {
     margin: 10px;
     min-width: 210px;
     min-height: 100px;
     max-width: 140px; }
-    main .ofertas .item .item-img img, main .nuevosIngresos .item .item-img img, main .productosRelacionados .item .item-img img {
+    main .ofertas-conteiner .ofertas .item .item-img img, main .ofertas-conteiner .nuevosIngresos .item .item-img img, main .ofertas-conteiner .productosRelacionados .item .item-img img, main .NuevosIngresos-conteiner .ofertas .item .item-img img, main .NuevosIngresos-conteiner .nuevosIngresos .item .item-img img, main .NuevosIngresos-conteiner .productosRelacionados .item .item-img img, main .productosRelacionados-conteiner .ofertas .item .item-img img, main .productosRelacionados-conteiner .nuevosIngresos .item .item-img img, main .productosRelacionados-conteiner .productosRelacionados .item .item-img img {
       width: 100px;
       height: auto;
       margin-top: 10px; }
-    main .ofertas .item .item-img .macbookimg, main .nuevosIngresos .item .item-img .macbookimg, main .productosRelacionados .item .item-img .macbookimg {
+    main .ofertas-conteiner .ofertas .item .item-img .macbookimg, main .ofertas-conteiner .nuevosIngresos .item .item-img .macbookimg, main .ofertas-conteiner .productosRelacionados .item .item-img .macbookimg, main .NuevosIngresos-conteiner .ofertas .item .item-img .macbookimg, main .NuevosIngresos-conteiner .nuevosIngresos .item .item-img .macbookimg, main .NuevosIngresos-conteiner .productosRelacionados .item .item-img .macbookimg, main .productosRelacionados-conteiner .ofertas .item .item-img .macbookimg, main .productosRelacionados-conteiner .nuevosIngresos .item .item-img .macbookimg, main .productosRelacionados-conteiner .productosRelacionados .item .item-img .macbookimg {
       width: 100px;
       margin-top: 10px; }
-    main .ofertas .item .item-img .ipad, main .nuevosIngresos .item .item-img .ipad, main .productosRelacionados .item .item-img .ipad {
+    main .ofertas-conteiner .ofertas .item .item-img .ipad, main .ofertas-conteiner .nuevosIngresos .item .item-img .ipad, main .ofertas-conteiner .productosRelacionados .item .item-img .ipad, main .NuevosIngresos-conteiner .ofertas .item .item-img .ipad, main .NuevosIngresos-conteiner .nuevosIngresos .item .item-img .ipad, main .NuevosIngresos-conteiner .productosRelacionados .item .item-img .ipad, main .productosRelacionados-conteiner .ofertas .item .item-img .ipad, main .productosRelacionados-conteiner .nuevosIngresos .item .item-img .ipad, main .productosRelacionados-conteiner .productosRelacionados .item .item-img .ipad {
       width: 80px;
       margin-top: 10px; }
-    main .ofertas .item .item-info h2, main .nuevosIngresos .item .item-info h2, main .productosRelacionados .item .item-info h2 {
+    main .ofertas-conteiner .ofertas .item .item-info h2, main .ofertas-conteiner .nuevosIngresos .item .item-info h2, main .ofertas-conteiner .productosRelacionados .item .item-info h2, main .NuevosIngresos-conteiner .ofertas .item .item-info h2, main .NuevosIngresos-conteiner .nuevosIngresos .item .item-info h2, main .NuevosIngresos-conteiner .productosRelacionados .item .item-info h2, main .productosRelacionados-conteiner .ofertas .item .item-info h2, main .productosRelacionados-conteiner .nuevosIngresos .item .item-info h2, main .productosRelacionados-conteiner .productosRelacionados .item .item-info h2 {
       font-size: 15px; }
-    main .ofertas .item .item-info p, main .nuevosIngresos .item .item-info p, main .productosRelacionados .item .item-info p {
+    main .ofertas-conteiner .ofertas .item .item-info p, main .ofertas-conteiner .nuevosIngresos .item .item-info p, main .ofertas-conteiner .productosRelacionados .item .item-info p, main .NuevosIngresos-conteiner .ofertas .item .item-info p, main .NuevosIngresos-conteiner .nuevosIngresos .item .item-info p, main .NuevosIngresos-conteiner .productosRelacionados .item .item-info p, main .productosRelacionados-conteiner .ofertas .item .item-info p, main .productosRelacionados-conteiner .nuevosIngresos .item .item-info p, main .productosRelacionados-conteiner .productosRelacionados .item .item-info p {
       font-size: 15px; }
   main .dispositivos .dispositivo {
     font-size: smaller; }
@@ -334,13 +342,21 @@ main {
         font-size: 15px; } }
 
 @media (max-width: 570px) {
-  main .ofertas .item, main .productosRelacionados .item, main .nuevosIngresos .item {
+  header .navbar .buscador {
+    justify-content: flex-start; }
+    header .navbar .buscador form input {
+      min-width: 190px;
+      max-width: 190px;
+      font-size: 14px; }
+      header .navbar .buscador form input::placeholder {
+        font-size: 14px; }
+  main .ofertas-conteiner .ofertas .item, main .ofertas-conteiner .productosRelacionados .item, main .ofertas-conteiner .nuevosIngresos .item, main .NuevosIngresos-conteiner .ofertas .item, main .NuevosIngresos-conteiner .productosRelacionados .item, main .NuevosIngresos-conteiner .nuevosIngresos .item, main .productosRelacionados-conteiner .ofertas .item, main .productosRelacionados-conteiner .productosRelacionados .item, main .productosRelacionados-conteiner .nuevosIngresos .item {
     max-width: 180px;
     min-width: 180px; } }
 
 @media (max-width: 400px) {
-  main .ofertas .item, main .productosRelacionados .item, main .nuevosIngresos .item {
+  main .ofertas-conteiner .ofertas .item, main .ofertas-conteiner .productosRelacionados .item, main .ofertas-conteiner .nuevosIngresos .item, main .NuevosIngresos-conteiner .ofertas .item, main .NuevosIngresos-conteiner .productosRelacionados .item, main .NuevosIngresos-conteiner .nuevosIngresos .item, main .productosRelacionados-conteiner .ofertas .item, main .productosRelacionados-conteiner .productosRelacionados .item, main .productosRelacionados-conteiner .nuevosIngresos .item {
     min-width: 130px;
     max-width: 130px; }
-    main .ofertas .item .item-info h2, main .ofertas .item .item-info p, main .productosRelacionados .item .item-info h2, main .productosRelacionados .item .item-info p, main .nuevosIngresos .item .item-info h2, main .nuevosIngresos .item .item-info p {
+    main .ofertas-conteiner .ofertas .item .item-info h2, main .ofertas-conteiner .ofertas .item .item-info p, main .ofertas-conteiner .productosRelacionados .item .item-info h2, main .ofertas-conteiner .productosRelacionados .item .item-info p, main .ofertas-conteiner .nuevosIngresos .item .item-info h2, main .ofertas-conteiner .nuevosIngresos .item .item-info p, main .NuevosIngresos-conteiner .ofertas .item .item-info h2, main .NuevosIngresos-conteiner .ofertas .item .item-info p, main .NuevosIngresos-conteiner .productosRelacionados .item .item-info h2, main .NuevosIngresos-conteiner .productosRelacionados .item .item-info p, main .NuevosIngresos-conteiner .nuevosIngresos .item .item-info h2, main .NuevosIngresos-conteiner .nuevosIngresos .item .item-info p, main .productosRelacionados-conteiner .ofertas .item .item-info h2, main .productosRelacionados-conteiner .ofertas .item .item-info p, main .productosRelacionados-conteiner .productosRelacionados .item .item-info h2, main .productosRelacionados-conteiner .productosRelacionados .item .item-info p, main .productosRelacionados-conteiner .nuevosIngresos .item .item-info h2, main .productosRelacionados-conteiner .nuevosIngresos .item .item-info p {
       font-size: smaller; } }

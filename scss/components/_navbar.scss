@@ -2,6 +2,7 @@
     padding: 20px;
     display: flex;
     div {
+        flex-grow: 1;
         a {
             margin-right: 20px;
             img {
@@ -48,6 +49,7 @@
             }
         }
         .mas-opciones {
+            flex-grow: 0;
             li {
                 a {
                     font-family: $primary-font;
@@ -59,19 +61,3 @@
     }
 }
 
-@media (max-width: 510px) {
-    .navbar {
-        .buscador {
-            justify-content: flex-start;
-            form {
-                input {
-                    min-width: 190px;
-                    max-width: 190px;
-                    &::placeholder {
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
-    }
-}

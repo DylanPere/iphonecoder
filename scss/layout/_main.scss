@@ -3,13 +3,43 @@ main {
     background-color: #131313;
     width: 100%;
     box-sizing: border-box;
-    .sectionName {
-        color: #fff;
-    margin-top: 50px;
-    margin-left: 60px;
-    font-size: 25px;
-    font-family: jura, sans-serif;
+    .ofertas-conteiner, .NuevosIngresos-conteiner, .productosRelacionados-conteiner {
+        .sectiontext {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap: 40px;
+            margin-bottom: 6vh;
+            .sectionName {
+                color: #fff;
+                margin-top: 50px;
+                margin-left: 60px;
+                font-size: 25px;
+                font-family: jura, sans-serif;} 
+            button {
+                padding:7px;
+                 min-width: 5vh;
+                 min-height: 3vh;
+                 border: none;
+                 border-radius: 5px;
+                 color: #fff;
+                 background-color: #ff007a ;
+                 &:hover {
+                    transform: scale(1.1);
+                    transition: 0.2s;
+                 }
+
+            }
+        }
+        .ofertas, .nuevosIngresos, .productosRelacionados {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
     }
+   
     .dispositivos {
         background-color: #383838;
         display: flex;
@@ -24,19 +54,9 @@ main {
             }
         }
 
-        .sectionName {
-            text-align: center;
-            font-size: 2rem;
-            margin: 20px 0;
-        }
         
-        .ofertas, .nuevosIngresos, .productosRelacionados {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-wrap: wrap;
-        }
+        
+        
     .publicacion {
         background-color: #fff;
         min-height: 60vh;
