@@ -66,6 +66,11 @@
           }
         }
       }
+      .promociones {
+        .promociones-contenedor {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
     }
 
   
@@ -144,9 +149,30 @@
           font-size: 15px;
         }
       }
+    }}
+    footer {
+      .descripcion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        p {
+          border-right: none;
+        &:nth-child(1) {
+          grid-row: 2;
+          grid-column: 1/2;
+        }
+        &:nth-child(2) {
+          grid-row: 1;
+          grid-column: 1/3;
+        }
+        &:nth-child(3) {
+          grid-row: 2;
+          grid-column: 2/3;
+        }
+        }
+        
+      }
     }
-    
-  }
   }
   @media (max-width: $breakpoint-5) {
     header {
@@ -167,6 +193,45 @@
     }
     }
     main {
+      .promociones{
+        background-size: contain;
+        .promociones-contenedor { 
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          .promociones-item {
+            &:nth-child(1) {
+              translate: 10px;
+              grid-column: 1 / 2;
+              grid-row: 1;
+            }
+      
+            &:nth-child(2) {
+              translate: 10px;
+              grid-column: 2 / 3;
+              grid-row: 1;
+            }
+      
+            &:nth-child(3) {
+              translate: 10px;
+              grid-column: 1 / 2;
+              grid-row: 2;
+            }
+      
+            &:nth-child(4) {
+              translate: 10px;
+              grid-column: 2 / 3;
+              grid-row: 2;
+            }
+      
+            &:nth-child(5) {
+              grid-column: 1 / 4;
+              grid-row: 3;
+            }
+          }
+        }
+        
+      }
       .ofertas-conteiner, .NuevosIngresos-conteiner, .productosRelacionados-conteiner {
       .ofertas, .productosRelacionados, .nuevosIngresos {
         .item {
@@ -181,6 +246,17 @@
   
 @media (max-width: $breakpoint-6) {
   main {
+    .promociones {
+      .promociones-contenedor {
+        display: flex;
+        flex-direction: column;
+        .promociones-item {
+          &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4){
+              translate: 0px;
+          }
+        }
+      }
+    }
     .ofertas-conteiner, .NuevosIngresos-conteiner, .productosRelacionados-conteiner {
         .ofertas, .productosRelacionados, .nuevosIngresos {
           .item {
@@ -194,4 +270,14 @@
       }
     }
   }}
+  footer {
+    .descripcion {
+      flex-direction: column;
+      p {
+        border-right: none;
+        border-bottom: #000 solid;
+        padding: 20px;
+      }
+    }
+  }
 }

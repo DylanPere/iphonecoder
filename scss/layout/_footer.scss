@@ -10,11 +10,15 @@
         color: #ffffff;
         font-family: $primary-font;}
         }
-.lorem {
+.descripcion {
             min-height: 20vh;
             background-color: #fff;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: first baseline;
             padding: 30px;
+            gap: 20px;
+            p {
+                border-right: #000000 solid;
+            }
     }
