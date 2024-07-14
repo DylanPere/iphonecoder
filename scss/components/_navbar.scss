@@ -1,8 +1,6 @@
 .navbar {
     padding: 20px;
-    display: flex;
     div {
-        flex-grow: 1;
         a {
             margin-right: 20px;
             img {
@@ -49,7 +47,6 @@
             }
         }
         .mas-opciones {
-            flex-grow: 0;
             li {
                 a {
                     font-family: $primary-font;
